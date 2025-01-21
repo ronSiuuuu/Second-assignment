@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+.quicksand {
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  
+  body{
+    background-image: url("assets/bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+ .container{
+    width: 80%;
+    margin: 0 auto;
+ }
+
+/* shared style */
+.orange{
+    color: orange;
+}
+.display-none{
+   display: none;
+}
+
+
+/* header style */
+ #head-container{
+  
+    width: 100%;
+    height: 675px;
+    /* background: linear-gradient( to right, #9999990e,#9999990e); */
+
+
+ }
+ 
+ .navbar{
+    display: flex;
+     justify-content: space-between; 
+    
+    align-items: center;
+    padding: 15px;
+    /* background-color: #3333334a ; */
+ }
+ li{
+    list-style: none;
+ }
+ a{
+    text-decoration: none;
+ }
+ .nav-link{
+    display: flex;
+    gap: 32px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    max-width: 387px;
+    
+ }
+ #home{
+    color: orange;
+
+ }
+#about{
+    color: skyblue;
+    
+ }
+ #Facilities{
+    color: #05D4DF;
+    
+ }
+ #Admission{
+    color: #5D58EF;
+ }
+ .logo{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+ }
+ #logo{
+    width: 62px;
+    height: 62px;
+ }
+ #school{
+    font-size: 2rem;
+    font-weight: 800;
+ }
+
+ .hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger .bar {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 4px 0;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+.btn-primary {
+    width: 197px;
+    padding: 10px 60px;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 400;
+    background-color: orange;
+    border-radius: 12px;
+    border: none;
+   
+}
+
+.banner img{
+  width: 100%;  
+  
+}
+ 
+ #banner{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 50px;
+    margin-top: 122;
+    margin-bottom: 122px;
+    /* justify-content: center; */
+    justify-content: space-between;
+ }
+ #Empowering{
+    color: orange;
+ }
+ #vision{
+    color: skyblue;
+ }
+ .hero-texts{
+    font-size: 2.8rem;
+    font-weight: bold;
+    margin-bottom: 60px;
+ }
+ .hero-description{
+    font-size: 1.2rem;
+ }
+ .hero-btn{
+    width: 197px;
+    padding: 10px 47px;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 400;
+    background-color: black;
+    border-radius: 12px;
+    border: none;
+ }
+ 
+ /* responsive for mobile device */
+ @media screen and (max-width:576px) {
+#banner{
+    flex-direction: column-reverse;
+
+}
+#school,#btn{
+    display: none;
+}
+
+
+.nav-link{
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+  
+}
+
+.nav-link li {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.menu-toggle:checked + .hamburger + .nav-links {
+    display: flex;
+}
+
+.hamburger {
+    display: flex;
+}
+.hero-texts{
+   font-size: 2rem;
+   text-align: center;
+   
+}
+    
+ }

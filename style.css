@@ -127,13 +127,14 @@
  
  #banner{
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     width: 100%;
     gap: 50px;
     margin-top: 122;
     margin-bottom: 122px;
     /* justify-content: center; */
     justify-content: space-between;
+    margin-left:-100px; 
  }
  #Empowering{
     color: orange;
@@ -148,6 +149,7 @@
  }
  .hero-description{
     font-size: 1.2rem;
+    font-weight: 400;
  }
  .hero-btn{
     width: 197px;
@@ -160,10 +162,115 @@
     border: none;
  }
  
+/* Curriculum styles */
+.Curriculum{
+   margin-top: 100px;
+   margin-bottom: 85px;
+   max-width: 1440px;
+   max-height: 887px;
+}
+.Curriculum-card-container{
+   display: grid;
+   grid-template-columns: repeat(3,1fr);
+   gap: 25px;
+  
+   
+  
+  
+}
+.Curriculum-card1{
+   background: linear-gradient(to bottom, #DEF5FF,rgba(255, 255, 255, 0));
+   padding: 52px 40px;
+   box-shadow: 0 0 28.3px 0.94px rgba(0, 0, 0, 0.05);
+    border-radius: 18px;
+    text-align: center;
+    overflow: hidden;
+}
+.Curriculum-card2{
+   background: linear-gradient( to bottom, #FFF4DC,rgba(255, 255, 255, 0));
+   padding: 52px 40px;
+   box-shadow: 0 0 28.3px 0.94px rgba(0, 0, 0, 0.05);
+   border-radius: 18px;
+   text-align: center;
+   overflow: hidden;
+}
+.Curriculum-card3{
+   background: linear-gradient( to bottom , #F2E8FF,rgba(255, 255, 255, 0));
+   box-shadow: 0 0 28.3px 0.94px rgba(0, 0, 0, 0.05);
+   padding: 52px 40px;
+   border-radius: 18px;
+   text-align: center;
+   overflow: hidden;
+}
+
+
+.Curriculum-heading{
+   text-align: center;
+   font-size: 3rem;
+   font-weight: bold;
+  
+   margin-bottom: 80px;
+}
+.Curriculum-title{
+   font-size: 1.5rem;
+   font-weight: bold;
+}
+.Curriculum-description{
+   color: #808080;
+   font-size: 1rem;
+}
+.read-more1{
+color: #64C8FF;
+font-size: 1.5rem;
+   font-weight: bold;
+}
+.read-more2{
+ color: #F0AA00;  
+ font-size: 1.5rem;
+   font-weight: bold;
+
+}
+.read-more3{
+   color: #8700FF;
+   font-size: 1.5rem;
+   font-weight: bold;
+}
+.arrow {
+   display: flex;
+  
+   border: none;
+   align-items: center;
+   justify-content: center;
+   gap: 10px;
+   
+   margin-bottom: 60px;
+   
+}
+ .arrow i{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: orange;
+   border-radius: 50%;
+   width: 60px;
+   height: 60px;
+  font-size: 1.2rem;
+   color: white;
+}
+
+
+
+
+
+
+
+
+
  /* responsive for mobile device */
  @media screen and (max-width:576px) {
 #banner{
     flex-direction: column-reverse;
+    margin-left: 0px;
 
 }
 #school,#btn{
@@ -198,5 +305,28 @@
    text-align: center;
    
 }
+.Curriculum{
+   margin-top: 550px;
+}
+.Curriculum-card-container{
+   grid-template-columns: repeat(1,1fr);
+   
+}
+.Curriculum-card3{
+   margin-bottom: 20px;
+}
+
+.Curriculum-heading{
+   font-size: 2rem;
+}
     
+.arrow{
+   display: none;
+}
+
+
+
+
+
+
  }
